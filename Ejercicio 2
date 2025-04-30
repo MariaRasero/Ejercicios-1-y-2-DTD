@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articles [
+  <!ELEMENT articles (article+)>
+  <!ELEMENT article (name, month, author, feedback, reviews*)>
+  <!ATTLIST article id ID #REQUIRED>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT month (#PCDATA)>
+  <!ELEMENT author EMPTY>
+  <!ATTLIST author name CDATA #REQUIRED>
+  <!ELEMENT feedback (#PCDATA)>
+  <!ELEMENT reviews (#PCDATA)>
+  <!ATTLIST reviews lang CDATA #IMPLIED>
+]>
+
+<articles>
+  <article id="x34675">
+    <name>Apache Spark Architecture</name>
+    <month>december</month>
+    <author name="kay vennisla"/>
+    <feedback> high rating</feedback>
+    <reviews lang=""/>
+    <reviews lang="de">The best content with diagrams</reviews>
+  </article>
+</articles>
